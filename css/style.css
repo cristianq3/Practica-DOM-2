@@ -7,3 +7,15 @@ main {
   flex-grow: 1;
 }
 
+.formulario {
+  width: 98%;
+  border-radius: 19px;
+  border: 1px white solid;
+  padding: 20px ;
+
+}
+
+.input-group-text, .form-select {
+  width: 75%;
+
+}

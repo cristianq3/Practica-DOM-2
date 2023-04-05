@@ -26,8 +26,11 @@
         <div
           class="container d-flex justify-content-center align-items-center flex-column mt-3 col col-md-6 shadow-lg"
         >
-          <p class="lead">Ingrese los datos de la persona:</p>
-          <form action="" class="">
+          <form
+            
+            class="formulario shadow-lg d-flex align-items-center flex-column justify-content-st"
+          >
+            <h2 class="lead">Ingrese los datos de la persona:</h2>
             <label for="nombre">Nombre</label>
             <input
               type="text"
@@ -54,11 +57,11 @@
             />
 
             <label for="sexo">Sexo</label>
-            <select name="sexo" id="sexo">
+            <select name="sexo" id="sexo" class="form-select">
               <option value="masculino">Masculino</option>
               <option value="femenino">Femenino</option>
-              <option value="otro">Otro</option>
-            </select>
+              <option value="otro">Otro</option></select
+            ><br />
 
             <label for="peso">Peso</label>
             <input
@@ -90,19 +93,18 @@
           </form>
         </div>
         <div
-          class="container d-flex justify-content-center align-items-center flex-column mt-3 col col-md-6 shadow-lg"
+          class="container d-flex flex-column mt-3 col col-md-6 shadow-lg px-5"
         >
-          <p class="lead">Ingrese los datos de la persona:</p>
+          <p class="lead mt-3">Consulta a que generacion pertenece:</p>
+          <button class="btn btn-primary m-3 p-1">Mostrar Generacion</button>
 
-          <button class="btn btn-primary m-3 p-1">Adivinar</button>
+          <p class="lead mt-3">Consulta la mayoria de edad:</p>
 
-          <p class="lead mt-3">Adivinar ingresando un numero:</p>
+          <button class="btn btn-primary m-3 p-1">Es mayor de Edad?</button>
 
-          <button class="btn btn-primary m-3 p-1">Adivinar</button>
+          <p class="lead mt-3">Mostrar informacion completa de la persona:</p>
 
-          <p class="lead mt-3">Adivinar ingresando un numero:</p>
-
-          <button class="btn btn-primary m-3 p-1">Adivinar</button>
+          <button class="btn btn-primary m-3 p-1">Mostrar</button>
         </div>
       </section>
     </main>
