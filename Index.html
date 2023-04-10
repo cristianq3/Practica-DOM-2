@@ -27,7 +27,6 @@
           class="container d-flex justify-content-center align-items-center flex-column mt-3 col col-md-6 shadow-lg"
         >
           <form
-            
             class="formulario shadow-lg d-flex align-items-center flex-column justify-content-st"
           >
             <h2 class="lead">Ingrese los datos de la persona:</h2>
@@ -38,6 +37,7 @@
               class="input-group-text p-1 m-2"
               required
               value="Ingrese el nombre"
+              maxlength="90"
             />
             <label for="edad">Edad</label>
             <input
@@ -46,6 +46,7 @@
               class="input-group-text p-1 m-2"
               required
               value="Ingrese la edad"
+              maxlength="3"
             />
             <label for="DNI">DNI</label>
             <input
@@ -54,6 +55,7 @@
               class="input-group-text p-1 m-2"
               required
               value="Ingrese el DNI"
+              maxlength="8"
             />
 
             <label for="sexo">Sexo</label>
@@ -63,24 +65,26 @@
               <option value="otro">Otro</option></select
             ><br />
 
-            <label for="peso">Peso</label>
+            <label for="peso">Peso (kg):</label>
             <input
               type="number"
               id="peso"
               class="input-group-text p-1 m-2"
               required
               value="Ingrese el peso en Kg"
+              maxlength="3"
             />
 
-            <label for="altura">Altura</label>
+            <label for="altura">Altura (cm):</label>
             <input
               type="number"
               id="altura"
-              class="input-group-text p-1 m-2"
+              class=" p-1 m-2"
               required
               value="Ingrese la altura en cm"
+              maxlength="4"
             />
-            <label for="anioNac">Año de Nacimiento</label>
+            <label for="anioNac">Año de Nacimiento:</label>
             <input
               type="number"
               id="anioNac"
