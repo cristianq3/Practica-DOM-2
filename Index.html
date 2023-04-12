@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta autor="Cristian Quiroga"/>
+    <meta autor="Cristian Quiroga" />
     <link
       href="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
@@ -28,82 +28,99 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
       <h1 class="display-5">Generaciones:</h1>
       <p class="lead">Ejercicio Nº 2 | Practica DOM | Javascript</p>
     </header>
-    <main>
+    <main class="container">
       <section class="row">
+        <!-- Formulario  -->
         <div
-          class="container d-flex justify-content-center align-items-center flex-column mt-3 col col-md-6 shadow-lg"
+          class="d-flex justify-content-center align-items-center flex-column mt-3 col col-md-6 shadow-lg"
         >
           <form
-            class="formulario shadow-lg d-flex align-items-start flex-column "
+            class="formulario shadow-lg d-flex align-items-start flex-column row"
           >
-            <h2 class="lead">Ingrese los datos de la persona:</h2>
-            <label for="nombre">Nombre</label>
-            <input
-              type="text"
-              id="nombre"
-              class="input-group-text p-1 m-2"
-              required
-              
-              
-            />
-            <label for="edad">Edad</label>
-            <input
-              type="number"
-              id="edad"
-              class="input-group-text p-1 m-2"
-              required
-              value=""
-              maxlength="3"
-            />
-            <label for="DNI">DNI</label>
-            <input
-              type="number"
-              id="DNI"
-              class="input-group-text p-1 m-2"
-              required
-              value=""
-              maxlength="8"
-            />
+            <h2 class="lead text-center">Ingrese los datos de la persona:</h2>
 
-            <label for="sexo" class="mb-2">Sexo:</label>
-            <div class="mb-2 d-flex">
-            <input type="radio" name="sexo" id="sexoM" value="Masculino" class="me-2"><label for="sexoM">Masculino</label>
-            <input type="radio" name="sexo" id="sexoF" value="Femenino" class="me-2 ms-4"><label for="sexoF">Femenino</label>
+            <div >
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                class="input-group-text p-1 m-2"
+                required
+              />
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                id="edad"
+                class="input-group-text p-1 m-2"
+                required
+                value=""
+                maxlength="3"
+              />
+              <label for="DNI">DNI</label>
+              <input
+                type="number"
+                id="DNI"
+                class="input-group-text p-1 m-2"
+                required
+                value=""
+                maxlength="8"
+              />
             </div>
+            <div>
+              <label for="sexo" class="mb-2">Sexo:</label>
+              <div class="mb-2 d-flex d-lg-flex justify-content-evenly">
+                <input
+                  type="radio"
+                  name="sexo"
+                  id="sexoM"
+                  value="Masculino"
+                  
+                /><label for="sexoM">Masculino</label>
+                <input
+                  type="radio"
+                  name="sexo"
+                  id="sexoF"
+                  value="Femenino"
+                  class="ms-4"
+                /><label for="sexoF">Femenino</label>
+              </div>
 
-            <label for="peso">Peso (kg):</label>
-            <input
-              type="number"
-              id="peso"
-              class="input-group-text p-1 m-2"
-              required
-              
-            />
+              <label for="peso">Peso (kg):</label>
+              <input
+                type="number"
+                id="peso"
+                class="input-group-text p-1 m-2"
+                required
+              />
 
-            <label for="altura">Altura (cm):</label>
-            <input
-              type="number"
-              id="altura"
-              class="input-group-text p-1 m-2"
-              required
-              maxlength="4"
-            />
-            <label for="anioNac">Año de Nacimiento:</label>
-            <input
-              type="number"
-              id="anioNac"
-              class="input-group-text p-1 m-2"
-              required
-            />
+              <label for="altura">Altura (cm):</label>
+              <input
+                type="number"
+                id="altura"
+                class="input-group-text p-1 m-2"
+                required
+                maxlength="4"
+              />
+              <label for="anioNac">Año de Nacimiento:</label>
+              <input
+                type="number"
+                id="anioNac"
+                class="input-group-text p-1 m-2"
+                required
+              />
+            </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
+        <!-- Botonera para mostrar datos  -->
         <div
           class="container d-flex flex-column mt-3 col col-md-6 shadow-lg px-5"
         >
           <p class="lead mt-3">Consulta a que generacion pertenece:</p>
-          <button class="btn btn-primary m-3 p-1" id="btnGeneracion">Mostrar Generacion</button>
+          <button class="btn btn-primary m-3 p-1" id="btnGeneracion">
+            Mostrar Generacion
+          </button>
 
           <p class="lead mt-3">Consulta la mayoria de edad:</p>
 

@@ -8,7 +8,7 @@ main {
 }
 
 .formulario {
-  width: fit-content;
+  width: 85%;
   border-radius: 19px;
   border: 1px white solid;
   padding: 20px ;
@@ -17,7 +17,7 @@ main {
 }
 
 .input-group-text, .form-select {
-  width: 98%;
+  width: 100%;
   height: 25px
 
 }
